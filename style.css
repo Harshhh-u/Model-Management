@@ -1,0 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #ececec;
+    position: relative;
+    padding-top: 0.1px;
+}
+#navbar{
+    height: 12vh;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+#navbar h1{
+    font-family:"Bodoni Moda SC";
+    font-size: 45px;
+    font-weight: 800;
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 22%;
+    border-right: 2px solid #000;
+    font-size: 20px;
+    font-weight: 600; 
+    font-family: Montserrat;
+    cursor: pointer;   
+}
+#navbar:before{
+    content: "Model Management";
+    position: absolute;
+    bottom: 10px;
+    left: 9vw;
+    font-size: 0.8vw;
+}
+#navbar h2:nth-last-child(1){
+    width: 10%;
+
+}
+#navbar h2:nth-last-child(2){
+    width: 24%;
+
+}
+#navbar h1 i{
+    font-size: 19px;
+    position: relative;
+    top: -15px;
+}
+#center{
+    height: 80%;
+    width: 100%;
+    padding: 4vw;
+    position: relative;
+    
+}
+#content{
+    height: 100%;
+    width: 100%;
+   
+   
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    object-fit: cover;
+   
+}
+#overlay{
+    height: 50%;
+    width: 92.1%;
+    position: absolute;
+    padding: 2vw;
+    bottom: -95px;
+   
+    
+    
+}
+#overlay1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    
+}
+.over2{
+    border-top: 2px solid #fff;
+    color: #fff;
+    margin: 15px 0px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 0;
+}
+#overlay1 h2{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 2vw 2.1vw;
+   
+    
+}
+#overlay1 h1{
+    font-family: Monument;
+    font-weight: 600;
+    font-size: 4vw;
+}
+.over2 h4{
+    font-family: Monument;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    padding: 1vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container-profiles{
+    height: 95%;
+    width: 100%;
+    margin-top: -88px;
+    display: inline-block;
+    padding: 4.5vw;
+    animation-name: profile-animation;
+    animation-delay: 0.2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+#scroll img{
+   height: 180%;
+   border-radius: 50%;
+   width: 14%;
+   object-fit:cover;
+   object-position: top;
+   margin: 7px 10px;
+  
+   
+}
+@keyframes profile-animation{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+#alphabets{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+    
+}
+#alphabets h5{
+    font-size: 1.4vw;
+    font-family: Monument;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 3px;   
+}
+#alphabets h6{
+    font-size: 1vw;
+    font-family: Monument;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: #1f1d1d;
+    padding: 0.6vw 0.6vw;
+    transition: all ease 0.2s;   
+    
+}
+#alphabets h6:hover{
+    border: 1px solid #000;
+    border-radius: 50%; 
+    
+}
+#navbar h2:hover{
+    text-decoration: underline;
+   
+    
+}
+#navbar h2:nth-last-child(1){
+    text-decoration: none;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+}
+ #page2-part1{
+    height: 500px;
+    width: 55%;
+    background-image: url(https://assets.vogue.com/photos/6532844ace2010c195a27133/master/w_2560%2Cc_limit/CARRER%2520RETRATOS%2520ALTAS%252021.jpg);
+    background-size: cover;
+}
+#page2-part2{
+    height: 500px;
+    width: 40%;
+    
+}
+#page2-part2 img{
+   height: 400px;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+.left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left h5{
+    height: 50%;
+    width: 100%;
+    background-color: red;
+}
+#image-text{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#left h5{
+    font-size: 15px;
+    font-family: Monument;
+    font-weight: 400;
+    
+}
+#right p{
+    font-size: 15px;
+    font-family: Monument;
+    font-weight: 100;
+    text-align: right;
+}
+#vogue-text{
+    height: 100%;
+    width: 50%;
+    margin: -20px 60px;  
+}
+#vogue-text h1{
+    font-size: 60px;
+    font-family: Monument;
+    font-weight: 200;
+}
+#part3{
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#left-part{
+    height: 100%;
+    width: 45%;
+    margin: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#left-part h2{
+    font-size: 14px;
+    font-family: Monument;
+    font-weight: 200;
+    padding-left: 40px;
+    text-align: justify;
+    margin-top: -7vw;
+}
+#left-part i{
+  position: relative;
+  
+  bottom: 300px;
+  font-size: 70px;
+  cursor: pointer;
+}
+#left-part img{
+    height: 55vh;
+    margin: 4vw;
+    mix-blend-mode: darken;
+    animation-name: circular-text;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+#right-part{
+    height: 500px;
+    width: 60%;
+    margin: 3.5vw;
+    background-image: url('https://media.gq.com/photos/58ee6f9eb5fad93d80184de3/16:9/w_2560%2Cc_limit/real-life-diet-Conrad-Bromfield-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    background-blend-mode:multiply;
+    
+    
+}
+@keyframes circular-text{
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+}
+.part4{
+    height: 600px;
+    width: 100%;
+    
+}
+.part4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    padding: 0 4vw 0 4vw;
+}
+#part5{
+    height: 100%;
+    width: 100%;
+    margin: 4vw;
+    margin-left: -10px;
+    padding: 5vw 4vw;
+    position: relative;
+
+}
+#part5>h1{
+    text-align: center;
+    font-size: Monument;
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 800;
+    margin-bottom: 6vh;
+}
+.elem{
+    height: 15.5vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    transition: all ease-in 0.5s;
+}
+.elem img{
+    height: 90px;
+    width: 90px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 12%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease-in 0.7s;
+}
+
+.elem .elem-part2{
+    width: 40%;
+}
+.elem-part2 h1{
+    font-size: 3vw;
+    font-weight: 500;
+}
+.elem-part2 h5{
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+.elem h4{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 7%;
+}
+.elem:nth-last-child(1){
+   border-bottom: 2px solid #000;
+}
+.elem:nth-last-child(1) img{
+    left: 50%;
+}
+.elem:nth-last-child(3) img{
+    left: 50%;
+}
+.elem:hover img{
+    left: 24%;
+    opacity: 1;
+}
+.elem:hover{
+    background-color: #d6d6d6;
+}
+#marquee-text{
+    height: 15vh;
+    width: 100%;
+    margin: 80px 12px; 
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#marquee-text h1{
+    display: inline-block;
+    font-size: 4vw;
+    font-family: Monument;
+    font-weight: 800;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #000;
+    padding: 16px;
+    margin-right: 12px;
+    letter-spacing: 8px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    animation-name: marque-text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes marque-text{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#part6{
+    height: 100%;
+    width: 100%;
+    padding-right: 4vw;
+    display: flex;
+    justify-content: center;
+    
+}
+#part6-left{
+    height: 100;
+    width: 50%;
+}
+#part6-right{
+    height: 100%;
+    width: 50%;
+   
+}
+#part6-left img{
+    height: 100%;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    object-fit: cover;
+    
+}
+.bottom-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3.2vw 2vw 1vw 3vw;
+}
+#left-image img{
+   height: 50vh;
+   width: 18vw;
+}
+#right-image img{
+    height: 50vh;
+    width: 20vw;
+}
+#part6-right h1,h5,p{
+    text-transform: uppercase;
+    font-family: Monument;
+   padding: 20px 20px 20px 3.2vw;
+}
+#part6-right h5{
+    font-weight: 100;
+    font-size: 2vh;
+}
+#part6-right p{
+    font-weight: 100;
+    font-size: 10px;
+}
+#footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    
+}
+#footer h1{
+    font-family:"Bodoni Moda SC";
+    font-size: 45px;
+    font-weight: 800;
+    height: 100%;
+    width: 18%;
+}
+#first{
+    height: 25vh;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 2px solid #000;
+    
+}
+#first h4{
+    position: relative;
+    bottom: 7vh;
+    padding-right: 20px;
+    font-family: Monument;
+   
+}
+#second{
+    height: 25vh;
+    width: 25vw;
+    padding: 20px;
+}
+#second h4{
+    font-size: 14px;
+    font-family: Monument;
+    font-weight: 100;
+    padding: 12px 50px 0 90px;
+}
+#third{
+    height: 25vh;
+    width: 45%;
+    border-left: 2px solid #000;
+    
+}
+#third-bottom{
+  margin-top: 1.1vw;
+    padding: 5px 0 0 0;
+  width: 100%;
+  border-top: 2px solid #000;
+}
+#third-bottom p{
+    padding-left: 1.5vw;
+    
+    height: 100%;
+    width: 70%;
+    font-size: 12px;
+}
+#third h4{
+    font-size: 15px;
+    font-family: Monument;
+    font-weight: 100;
+    padding-left: 1.5vw;
+    padding: 30px 0 20px 20px;
+}
+#third i{
+    padding-left: 1.5vw;
+}
+@media (max-width:680px){
+    #main{
+    height: 100%;
+    width: 100%;
+    background-color: #ececec;
+    position: relative;
+    padding-top: 0.1px;
+}
+    #navbar{
+    height: 7vh;
+    width: 100%;
+    margin-top: 0px;
+}
+#navbar h1{
+    position: relative;
+    left: 15px;
+    font-size: 20px;
+    height: 100%;
+    width: 16%;
+}
+#navbar h2{
+    height: 100%;
+    width: 25%;
+    font-size: 10px;
+
+}
+#navbar h2:nth-last-child(1){
+    width: 8%;
+
+}
+
+#navbar h1 i{
+    font-size: 10px;
+    position: relative;
+    top: -8px;
+}
+#overlay{
+    bottom: 4px;    
+}
+.over2{
+    border-top: 0.4px solid #fff;
+}
+#overlay1 h2{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 2vw 2.1vw;
+   
+    
+}
+#overlay1 h1{
+    font-family: Monument;
+    font-weight: 600;
+    font-size: 3vw;
+}
+.over2 h4{
+    font-family: Monument;
+}
+#scroll{
+    height: 30vh;
+    padding: 10vw;
+}
+#container-profiles{
+    height: 95px;
+    width: 200%;
+    margin-top: -88px;   
+}
+#scroll img{
+   height: 260%;
+   width: 12.4%;
+   margin: 6px 10px;  
+}
+#alphabets{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+    
+}
+#alphabets h5{
+    font-size: 2vw;
+    letter-spacing: 1px;
+    border-bottom: none;
+}
+#alphabets h6{
+    font-size: 1.2vw;
+    letter-spacing: 0.5px;
+    padding: 2vw 0.5vw;
+}
+#page2{
+    padding: 6vw 4vw;
+}
+#page2-part2 img{
+   height: 400px;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.left h5{
+    height: 50%;
+    width: 100%;
+}
+#left h5{
+    font-size: 9px;
+    margin-left: -15px;
+}
+#right p{
+    font-size: 9px;
+    padding: 0 0 0 2px;
+}
+#vogue-text{
+    margin: -20px 40px;  
+}
+#vogue-text h1{
+    font-size: 25px;
+    font-weight: 800;
+}
+#left-part i{  
+  bottom: 170px;
+  font-size: 40px;
+}
+#left-part img{
+    height: 35vh;
+    margin: 4vw;
+}
+#left-part h2{
+    font-size: 10px;
+    font-family: Monument;
+    font-weight: 200;
+    padding-left: 40px;
+    text-align: justify;
+    margin-top: -7vw;
+}
+#right-part{
+    margin-top: -50px;
+    position: relative;
+    height: 550px;
+    width: 55%;  
+    background-image: url('https://assets-metrostyle.abs-cbn.com/prod/metrostyle/attachments/191a4acb-2ecd-4959-a1e3-793fce305027_song%20kang%20holds%20a%20fan%20meet%20with%20netflix%202.jpg'); 
+}
+}
